@@ -1,69 +1,57 @@
-# React + TypeScript + Vite
+# DK Instalações – Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page institucional desenvolvida para a empresa **DK Instalações**, especializada em **serviços elétricos, hidráulicos e manutenção técnica** para mercados, atacadões, clubes e empresas em geral.
 
-Currently, two official plugins are available:
+A página tem como objetivo apresentar os serviços prestados de forma clara, moderna e responsiva, com foco em conversão por meio de formulário de contato integrado.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* [React](https://react.dev/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Vite](https://vitejs.dev/)
+* [Bootstrap 5](https://getbootstrap.com/)
+* [Bootstrap Icons](https://icons.getbootstrap.com/)
+* HTML5 + CSS3
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🧑‍💻 Como rodar o projeto localmente
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/DKRANGEL/DK_INSTALACOES
+cd DK_INSTALACOES
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Instale as dependências
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+### 3. Rode o projeto em modo de desenvolvimento
+
+```bash
+npm run dev
+```
+
+> O Vite iniciará a aplicação. Acesse no navegador: `http://localhost:5173`
+
+---
+
+## ✅ Scripts disponíveis
+
+| Comando           | Descrição                               |
+| ----------------- | --------------------------------------- |
+| `npm run dev`     | Inicia o servidor local com HMR         |
+| `npm run build`   | Gera os arquivos otimizados de produção |
+| `npm run preview` | Pré-visualiza o build em servidor local |
+
+---
+
+## 📄 Licença
+
+Projeto desenvolvido para fins comerciais por DK Instalações. Todos os direitos reservados.

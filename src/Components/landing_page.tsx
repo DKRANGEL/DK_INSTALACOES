@@ -1,5 +1,5 @@
 import svgInstalacoes from '../assets/svg_dkinstalacoes.png';
-import Navbar from './Navbar';
+import Navbar from './navbar';
 
 export default function LandingPage() {
   return (
